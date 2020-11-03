@@ -1,6 +1,6 @@
 # LibriSpeechMix
 
-LibriSpeechMix is the dastaset used in [Serialized Output Training for End-to-End Overlapped Speech Recognition](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf) and [Joint speaker counting, speech recognition, and speaker identification for overlapped speech of any number of speakers](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf) for evaluating multi-talker speech recognition systems. The dataset has been derived from the LibriSpeech "dev_clean" and "test_clean" set.
+LibriSpeechMix is the dastaset used in [Serialized Output Training for End-to-End Overlapped Speech Recognition](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf) and [Joint speaker counting, speech recognition, and speaker identification for overlapped speech of any number of speakers](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf) for evaluating multi-talker speech recognition systems. The dataset has been derived from the LibriSpeech "dev_clean" and "test_clean" sets.
 - Notable features
   - Consists of partially overlapped speech utterances (instead of commonly-used fully overlapped utterances), which is closer to real senarios.
   - Designed for ASR evaluation. 
