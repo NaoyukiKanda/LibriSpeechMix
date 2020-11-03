@@ -1,16 +1,16 @@
 # LibriSpeechMix
 
-The evaluation dataset for multi-talker speech recognition research. 
-- Unique properties
-  - Partially overlapped speech (i.e. not fully overlapped speech), which is closer to real senarios.
-  - Carefully designed for ASR evaluation. WERs of different number of speaker mixtures (e.g., WERs for 2-speaker-mixed and 3-speaker-mixed test sets) can be compared meaningfully.
-    - For N-speaker-mixed evaluation set, each utterance in the original LibriSpeech evaluation data is used exactly N times.
+LibriSpeechMix is the dastaset used in [Serialized Output Training for End-to-End Overlapped Speech Recognition](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf) and [Joint speaker counting, speech recognition, and speaker identification for overlapped speech of any number of speakers](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf) for evaluating multi-talker speech recognition systems. The dataset has been derived from the LibriSpeech "dev_clean" and "test_clean" set.
+- Notable features
+  - Consists of partially overlapped speech utterances (instead of commonly-used fully overlapped utterances), which is closer to real senarios.
+  - Designed for ASR evaluation. 
+    - The dataset comprises single-speaker, two-speaker-mixture, and three-speaker-mixtures datasets. Each utterance in the original LibriSpeech evaluation data is used exactly N times in the N-speaker set, which allows the WERs to be compared across the three speaker number conditions. 
     - Each mixed audio does not contain multiple utterances of the same speaker.
-  - Including the information for speaker profile extraction, which is specially tailored for speaker-attributed automatic speech recogntion (SA-ASR) experiments.
+  - Includes the information for speaker profile extraction, which is suitable for speaker-attributed automatic speech recogntion (SA-ASR) experiments.
 - The dataset was used for the papers listed below. 
   - Naoyuki Kanda, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Takuya Yoshioka: Serialized Output Training for End-to-End Overlapped Speech Recognition, Proc. Interspeech, pp. 2797-2801, 2020. [[pdf]](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf)
   - Naoyuki Kanda, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Zhuo Chen, Tianyan Zhou , Takuya Yoshioka: Joint speaker counting, speech recognition, and speaker identification for overlapped speech of any number of speakers. Proc. Interspeech, pp. 36-40, 2020. [[pdf]](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf)
-- Intersted readers may also refer the related paper.
+- Intersted readers are also referred to the following related paper.
   -  Naoyuki Kanda, Xuankai Chang, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Zhuo Chen, Takuya Yoshioka: Investigation of End-To-End Speaker-Attributed ASR for Continuous Multi-Talker Recordings. Proc. SLT, 2021 (to appear). [[pdf]](https://arxiv.org/pdf/2008.04546.pdf)
 
 ## Prerequisites
@@ -19,12 +19,12 @@ The evaluation dataset for multi-talker speech recognition research.
   - flac
 
 ## How to Generate Data
-Following commands will first download LibriSpeech evaluation data ("dev_clean" and "test_clean"), and then generate mixed audio.
+The following commands first download the LibriSpeech evaluation data ("dev_clean" and "test_clean") and then generate the mixed audio.
 ```sh
 $ pip install soundfile librosa numpy
 $ bash run.sh
 ```
-Mixed audio is generated under ./data/ directory according to the information in *.jsonl file.
+The mixed audio files are generated under ./data/ directory according to the information in *.jsonl file.
 ```
 list/
 ├── dev-clean-1mix.jsonl
@@ -45,12 +45,12 @@ list/
 |speaker_profile|Option for SA-ASR|Audio list for speaker profile extraction (NOTE: relative path from ./data/)|
 |speaker_profile_index|Option for SA-ASR|Index of speaker profile corresponding to each utterance in the mixed audio|
 |wavs||Original wav files used to generage the mixed audio (NOTE: relative path from ./data)|
-|delays||Delay (sec) for each utterance when the mixed audio is generated|
+|delays||Delay (in second) applied to each utterance before mixing the signals|
 |speakers||Speaker id of each utterance|
-|durations||Duration of each original wav file|
+|durations||Duration (in second) of each original wav file|
 |genders||Gender of the speaker of each utterance in the mixed audio|
 
-### Example of 2-speaker-mixed audio (indented for visibility)
+### Example of 2-speaker-mixture audio (indented for visibility)
 ```
 {
     "id": "dev-clean-2mix/dev-clean-2mix-0000", 
@@ -76,7 +76,7 @@ list/
 }
 ```
 
-## Citation
+## When referring to this dataset, the following papers can be cited.
 ```
 @inproceedings{kanda2020serialized,
   title={Serialized Output Training for End-to-End Overlapped Speech Recognition},
@@ -91,13 +91,6 @@ list/
   author={Kanda, Naoyuki and Gaur, Yashesh and Wang, Xiaofei and Meng, Zhong and Chen, Zhuo and Zhou, Tianyan and Yoshioka, Takuya},
   booktitle={Proc. Interspeech},
   pages={36--40},
-  year={2020}
-}
-
-@article{kanda2020investigation,
-  title={Investigation of End-To-End Speaker-Attributed ASR for Continuous Multi-Talker Recordings},
-  author={Kanda, Naoyuki and Chang, Xuankai and Gaur, Yashesh and Wang, Xiaofei and Meng, Zhong and Chen, Zhuo and Yoshioka, Takuya},
-  journal={arXiv preprint arXiv:2008.04546},
   year={2020}
 }
 ```
