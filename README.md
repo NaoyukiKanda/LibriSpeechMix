@@ -76,7 +76,7 @@ list/
 }
 ```
 
-## When referring to this dataset, the following papers can be cited.
+## When referring to this dataset, one of the following papers may be cited.
 ```
 @inproceedings{kanda2020serialized,
   title={Serialized Output Training for End-to-End Overlapped Speech Recognition},
