@@ -1,6 +1,6 @@
 # LibriSpeechMix
 
-LibriSpeechMix is the dastaset used in [Serialized Output Training for End-to-End Overlapped Speech Recognition](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf) and [Joint speaker counting, speech recognition, and speaker identification for overlapped speech of any number of speakers](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf) for evaluating multi-talker speech recognition systems. The dataset has been derived from the LibriSpeech "dev_clean" and "test_clean" sets.
+LibriSpeechMix is the dastaset used in [Serialized Output Training for End-to-End Overlapped Speech Recognition](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf) and [Joint Speaker Counting, Speech Recognition, and Speaker Identification for Overlapped Speech of Any Number of Speakers](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf) for evaluating multi-talker speech recognition systems. The dataset has been derived from the LibriSpeech "dev_clean" and "test_clean" sets.
 - Notable features
   - Consists of partially overlapped speech utterances (instead of commonly-used fully overlapped utterances), which is closer to real senarios.
   - Designed for ASR evaluation. 
@@ -9,7 +9,7 @@ LibriSpeechMix is the dastaset used in [Serialized Output Training for End-to-En
   - Includes the information for speaker profile extraction, which is suitable for speaker-attributed automatic speech recogntion (SA-ASR) experiments.
 - The dataset was used for the papers listed below. 
   - Naoyuki Kanda, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Takuya Yoshioka: Serialized Output Training for End-to-End Overlapped Speech Recognition, Proc. Interspeech, pp. 2797-2801, 2020. [[pdf]](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf)
-  - Naoyuki Kanda, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Zhuo Chen, Tianyan Zhou , Takuya Yoshioka: Joint speaker counting, speech recognition, and speaker identification for overlapped speech of any number of speakers. Proc. Interspeech, pp. 36-40, 2020. [[pdf]](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf)
+  - Naoyuki Kanda, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Zhuo Chen, Tianyan Zhou , Takuya Yoshioka: Joint Speaker Counting, Speech Recognition, and Speaker Identification for Overlapped Speech of Any Number of Speakers. Proc. Interspeech, pp. 36-40, 2020. [[pdf]](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf)
 - Intersted readers are also referred to the following related paper.
   -  Naoyuki Kanda, Xuankai Chang, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Zhuo Chen, Takuya Yoshioka: Investigation of End-To-End Speaker-Attributed ASR for Continuous Multi-Talker Recordings. Proc. SLT, 2021 (to appear). [[pdf]](https://arxiv.org/pdf/2008.04546.pdf)
 
@@ -87,7 +87,7 @@ list/
 }
 
 @inproceedings{kanda2020joint,
-  title={Joint speaker counting, speech recognition, and speaker identification for overlapped speech of any number of speakers},
+  title={Joint Speaker Counting, Speech Recognition, and Speaker Identification for Overlapped Speech of Any Number of Speakers},
   author={Kanda, Naoyuki and Gaur, Yashesh and Wang, Xiaofei and Meng, Zhong and Chen, Zhuo and Zhou, Tianyan and Yoshioka, Takuya},
   booktitle={Proc. Interspeech},
   pages={36--40},
