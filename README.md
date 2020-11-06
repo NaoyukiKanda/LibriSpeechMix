@@ -11,6 +11,7 @@ LibriSpeechMix is the dastaset used in [Serialized Output Training for End-to-En
   - Naoyuki Kanda, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Takuya Yoshioka: Serialized Output Training for End-to-End Overlapped Speech Recognition, Proc. Interspeech, pp. 2797-2801, 2020. [[pdf]](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/0999.pdf)
   - Naoyuki Kanda, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Zhuo Chen, Tianyan Zhou , Takuya Yoshioka: Joint Speaker Counting, Speech Recognition, and Speaker Identification for Overlapped Speech of Any Number of Speakers. Proc. Interspeech, pp. 36-40, 2020. [[pdf]](https://www.isca-speech.org/archive/Interspeech_2020/pdfs/1085.pdf)
 - Intersted readers are also referred to the following related paper.
+  - Naoyuki Kanda, Zhong Meng, Liang Lu, Yashesh Gaur, Xiaofei Wang, Zhuo Chen, Takuya Yoshioka: Minimum Bayes Risk Training for End-to-End Speaker-Attributed ASR,	arXiv:2011.02921, 2020. [[pdf]](https://arxiv.org/pdf/2011.02921.pdf)
   -  Naoyuki Kanda, Xuankai Chang, Yashesh Gaur, Xiaofei Wang, Zhong Meng, Zhuo Chen, Takuya Yoshioka: Investigation of End-To-End Speaker-Attributed ASR for Continuous Multi-Talker Recordings. Proc. SLT, 2021 (to appear). [[pdf]](https://arxiv.org/pdf/2008.04546.pdf)
 
 ## Prerequisites
