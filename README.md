@@ -77,6 +77,14 @@ list/
 }
 ```
 
+## Optional list
+- ./list/optional/ directory contains optional *jsonl files with different profile settings for SA-ASR.
+- Each file has a name of [dev|test]-clean-[1|2|3]mix-8prof-[1|2|5|10]utt.jsonl.
+  - [dev|test] indicates if this is development data or test data
+  - [1|2|3]mix indicates the number of mixed audio
+  - [1|2|5|10]utt indicates the number of utterances for extracting a speaker profile for each speaker
+- Files with a suffix of '-8prof-2utt.jsonl' is identical to the files in ./list/ directory.
+
 ## When referring to this dataset, one of the following papers may be cited.
 ```
 @inproceedings{kanda2020serialized,
